@@ -1,29 +1,25 @@
-metadata:
-  pattern-id: onp.base.template
-  pattern-name: base-template
-  organisation-id: onp
-  pattern-version: 1.0.0
-  pattern-description: some description here
-  pattern-categories: 
-              - bootstrap
-
+dependencies: null
 lifecycle:
   create:
     commands:
-      - bash lifecycle/create.sh
-
+    - bash lifecycle/create.sh
   delete:
     commands:
-      - bash lifecycle/delete.sh
-
+    - bash lifecycle/delete.sh
   update:
     commands:
-      - bash lifecycle/update.sh
-
+    - bash lifecycle/update.sh
   upgrade:
     commands:
-      - bash lifecycle/upgrade.sh
-
-dependencies:
-
-
+    - bash lifecycle/upgrade.sh
+metadata:
+  organisation-id: onp
+  pattern-categories:
+  - Storage
+  pattern-description: This pattern describes how to copy data from an Amazon Simple
+    Storage Service (Amazon S3) bucket in an Amazon Web Services (AWS) account and
+    AWS Region to an S3 bucket in another account and Region.
+  pattern-id: onp.Copy.data.from.an.S3.bucket.to.another.account.and.Region.by.using.the.AWS.CLI
+  pattern-name: Copy data from an S3 bucket to another account and Region by using
+    the AWS CLI
+  pattern-version: 1.0.0
